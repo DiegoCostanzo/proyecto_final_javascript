@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Formulario de pago de presupuesto de cctv">
+  <meta name="keywords"  content="formulario, formulario de pago cctv">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+  <title>Cosfic - Formulario de Pago</title>
+</head>
+<body>
+  <header class="sticky-top">	
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-gark container">
+    <a class="navbar-brand" href="#">
+      <img src="../images/Cosfic_logo.svg" alt="logo de la empresa" class="estilo-logo">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+            <div class="dropdown-menu">
+            <a href="#" class="dropdown-item" >Nuestra empresa</a>
+            <a href="#" class="dropdown-item">Conocenos</a>
+          </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nuestros servicios</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Servicios</a>
+              <a href="#" class="dropdown-item">Nuestros trabajos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nuestros productos</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Productos</a>
+              <a href="#" class="dropdown-item">Más vendido</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicio Técnico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram icono-redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link estilo-loco" href="https://es-la.facebook.com/" class="mt-5" target="_blank"><i class="fab fa-facebook-f icono-redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter icono-redes"></i></a>
+          </li>
+        </ul>
+      </div> 
+    </nav>
+  </header>
+  <section class="pt-4">  
+    <div class="content estilo-formulario">
+        <div class="content__inner ">
+          </div>
+          <div class="container overflow-hidden">
+            <div class="multisteps-form mb-5">
+              <div class="row">
+                <div class="col-12 col-lg-8 ml-auto mr-auto mt-4 mb-4">
+                  <div class="multisteps-form__progress">
+                    <button class="multisteps-form__progress-btn  js-active estilo-letra-form " type="button" title="User Info"><i class="far fa-address-card tamaño-icono-form"></i><br>Datos personales</button>
+                    <button class="multisteps-form__progress-btn estilo-letra-form" type="button" title="Address"><i class="fas fa-house-user tamaño-icono-form "></i><br>Domicilio</button>
+                    <button class="multisteps-form__progress-btn estilo-letra-form" type="button" title="Order Info"><i class="far fa-credit-card tamaño-icono-form"></i><br>Datos de tarjeta</button>
+                    <button class="multisteps-form__progress-btn estilo-letra-form" type="button" title="Comments"><i class="fas fa-check tamaño-icono-form"></i><br>Confirmación</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-8 m-auto">
+                  <form class="multisteps-form__form">
+                    <div class="multisteps-form__panel panel-boton shadow p-4 rounded bg-white js-active" data-animation="scaleIn">
+                      <h3 class="multisteps-form__title">Información de Usuario</h3>
+                      <div class="multisteps-form__content">
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control texto" type="text"  placeholder="Nombre"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control apellido"  type="text" placeholder="Apellido"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="email" placeholder="Email"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" type="number" placeholder="Edad"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="password" placeholder="Password"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" type="password" placeholder="Repetir Password"/>
+                          </div>
+                        </div>
+                        <div class="button-row d-flex mt-4">
+                          <button class="btn btn-primary ml-auto js-btn-next boton-siguiente-uno" type="button" title="Next">Siguiente</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                      <h3 class="multisteps-form__title">Dirección</h3>
+                      <div class="multisteps-form__content">
+                        <div class="form-row mt-4">
+                          <div class="col">
+                            <input class="multisteps-form__input form-control calle" type="text" placeholder="Calle"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col">
+                            <input class="multisteps-form__input form-control numero" type="number" placeholder="Número"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Ciudad"/>
+                          </div>
+                          <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                            <select class="multisteps-form__select form-control">
+                              <option value="Buenos">Buenos Aires</option>
+                              <option value="Cat">Catamarca</option>
+                              <option value="Cha">Chaco</option>
+                              <option value="Chu">Chubut</option>
+                              <option value="Cor">Córdoba</option>
+                              <option value="Corr">Corrientes</option>
+                              <option value="For">Formosa</option>
+                              <option value="Ju">Jujuy</option>
+                              <option value="Pam">La Pampa</option>
+                              <option value="Rio">La Rioja</option>
+                              <option value="Men">Mendoza</option>
+                              <option value="Mis">Misiones</option>
+                              <option value="Neu">Neuquén</option>
+                              <option value="Rio">Rio Negro</option>
+                              <option value="Sal">Salta</option>
+                              <option value="Juan">San Juan</option>
+                              <option value="Luis">San Luís</option>
+                              <option value="Cruz">Santa Cruz</option>
+                              <option value="Santa">Sante Fe</option>
+                              <option value="Santia">Santiado del Estero</option>
+                              <option value="Fuego">Tierra del Fuego</option>
+                              <option value="Tuc">Tucumán</option>
+                            </select>
+                          </div>
+                          <div class="col-6 col-sm-3 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" type="number" placeholder="Código postal"/>
+                          </div>
+                        </div>
+                        <div class="button-row d-flex mt-4">
+                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Atrás</button>
+                          <button class="btn btn-primary ml-auto js-btn-next boton-siguiente-dos" type="button" title="Next">Siguiente</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                      <h3 class="multisteps-form__title">Datos de pago</h3>
+                      <div class="multisteps-form__content">
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Nombre Titular"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Apellido Titular"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Numero de tarjeta"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Fecha de vencimiento (DD/MM/AAAA)"/>
+                          </div>
+                        </div>
+                        <div class="form-row mt-4">
+                          <div class="col-12 col-sm-6">
+                            <input class="multisteps-form__input form-control" type="text" placeholder="Código de seguridad(CVV/CVC)"/>
+                          </div>
+                          <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                          </div>
+                        </div>
+                        <div class="button-row d-flex mt-4">
+                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Atrás</button>
+                          <button class="btn btn-primary ml-auto js-btn-next" type="button" title="Next">Siguiente</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                      <h2 class="multisteps-form__title titulo-confrimación">¡Gracias por comprar en COSFIC!</h2>
+                      <div class="multisteps-form__content">
+                        <div class="form-row mt-4 " id="texto-final">
+                        </div>
+                        <div class="button-row d-flex mt-4">
+                          <button class="btn btn-primary js-btn-prev" type="button" title="Prev">Atrás</button>
+                          <button class="btn btn-success ml-auto comprar" type="button" title="Send">Realizar compra</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <footer>
+	  <div class="container">
+      <div class="row">
+    		<div class="col-md-8 text-white-50 pt-3 pb-3">
+      		<h4 class="h4-footer">Nuestra Ubicación</h4>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5782500475448!2d-64.20764668458479!3d-31.398190681410203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988d73eb6f75%3A0xff6ccdf761348349!2sPedro%20Arata%201945%2C%20X5003AOA%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1599070342342!5m2!1ses-419!2sar" class="imagen-mapa" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    		</div>
+        <div class="col-md-4 text-white-50 pt-3">
+          <h4 class="mb-3 h4-footer">Contacto</h4>
+            <ul class="nav flex-column estilo-lista-footer ">
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="tel:+543516458244" target="_blank" ><i class="fas fa-phone-alt estilo-icono"></i>Teléfono:3516458244</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="mailto:empresa@gmail.com" target="_blank" ><i class="fas fa-envelope-open-text estilo-icono"></i>Mail: empresa@gmail.com</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="https://api.whatsapp.com/send?phone=543516458244&text=Hola!Tengo una consulta" target="_blank" ><i class="fab fa-whatsapp estilo-icono"></i>Ventas: 3516458245</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="https://api.whatsapp.com/send?phone=543516458244&text=Hola!Tengo una consulta" target="_blank"><i class="fab fa-whatsapp estilo-icono"></i>Soporte técnico: 3516458246</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://www.instagram.com/?hl=es-la" target="_blank" ><i class="fab fa-instagram-square estilo-icono"></i>Instagram</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://es-la.facebook.com/" class="mt-5" target="_blank"><i class="fab fa-facebook-square estilo-icono"></i>Facebook</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter-square estilo-icono"></i>Twitter</a>
+                </div>
+              </li>
+            </ul>       
+        </div>
+  	  </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js" integrity="sha512-RdSPYh1WA6BF0RhpisYJVYkOyTzK4HwofJ3Q7ivt/jkpW6Vc8AurL1R+4AUcvn9IwEKAPm/fk7qFZW3OuiUDeg==" crossorigin="anonymous"></script>  
+  <script  src="../js/seccion_pago.js"></script>
+  <script  src="../js/script.js"></script>
+  <script src="../js/main.js"></script>
+</html>

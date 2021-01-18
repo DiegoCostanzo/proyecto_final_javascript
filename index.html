@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Seccion e-commerce en donde se pueden adquirir los prodcutos comercializados por COSFIC">
+  <meta name="keywords"  content="comprar productos cctv, e-commerce cctv, productos cctv">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <title>Cosfic - E-COMMERCE</title>
+</head>
+<body>
+  <header class="sticky-top">	
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-gark container">
+    <a class="navbar-brand" href="#">
+      <img src="images/Cosfic_logo.svg" alt="logo de la empresa" class="estilo-logo">
+    </a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active"></li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nosotros</a>
+            <div class="dropdown-menu">
+            <a href="#" class="dropdown-item" >Nuestra empresa</a>
+            <a href="#" class="dropdown-item">Conocenos</a>
+          </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nuestros servicios</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Servicios</a>
+              <a href="#" class="dropdown-item">Nuestros trabajos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Nuestros productos</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Productos</a>
+              <a href="#" class="dropdown-item">Más vendido</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicio Técnico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#"><i class="fas fa-cart-plus icono-redes" id="productos-icono-carrito"></i></a>
+            <div id="carrito-compras" class="dropdown-menu menu-carrito">
+              <table id="productos-carrito">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Eliminar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+              <div id="precio-total">  
+              </div>
+              <div class="estilo-botones">
+                <button id ="vaciar-carrito" class="boton btn btn-sm btn-outline-secondary">Limpiar carrito</button>
+                <a id ="comprar" href="pages/presupuesto.html" class="boton btn btn-sm btn-outline-secondary">Comprar</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fab fa-instagram icono-redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link estilo-loco" href="https://es-la.facebook.com/" class="mt-5" target="_blank"><i class="fab fa-facebook-f icono-redes"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter icono-redes"></i></a>
+          </li>
+        </ul>
+      </div> 
+    </nav>
+  </header>
+	<section>
+    <div class="container">
+      <h1 class="mt-4">E-commerce</h1>
+    </div>
+  </section>
+  <section>
+      <div class="container mt-4" id="lista-productos">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_e_commerce.png" alt="Imagen cámara full-hd" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara Bullet 1080p</h5>
+                <p class="card-text">Cámara bullet con infrarrojos con 20 metros de distancia para uso nocturno. Cámara metálica para exterior. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "1" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$3000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_domo_e_commerce.png" alt="Imagen cámara domo 960 pixeles" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara Domo 960p</h5>
+                <p class="card-text">Cámara tipo domo con infrarrojos de 20 metros, apta para uso nocturno. Cámara con gabinete metálico para exterior.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "2" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$2500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_domo_ptz_e_commerce.png" alt="Imagen cámara PTZ motorizada de 1080 pixeles" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara PTZ 1080p</h5>
+                <p class="card-text">Cámara domo PTZ motorizada con movimiento en los tres ejes. Puede controlarse desde una grabadora.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "3" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$12000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_antivandalica_e_commerce.png" alt="Imagen de cámara antivandálica" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara Antivandálica</h5>
+                <p class="card-text">Cámara con protección de acrílico para evitar daños por vandalizaciones. Es apta para exterior.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "4" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$4500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_bullet_ip_e_commerce.png" alt="Imagen de cámara IP de 960 pixeles" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara IP 960p</h5>
+                <p class="card-text">Cámara bullet IP con resolución de 960 pixeles. Cuenta con gabinete metálico y con leds infrarrojos para uso nocturno.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "5" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$4750</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_ip_ptz_e_commerce.png" alt="Imagen cámara PTZ motorizada IP" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara PTZ IP</h5>
+                <p class="card-text">Cámara domo PTZ IP motorizada con movimiento en los tres ejes. Puede controlarse desde una grabadora.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "6" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$15000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/dvr_1080p_e_commerce.png" alt="Imagen grabadora de 1080 pixeles" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Grabadora 1080p</h5>
+                <p class="card-text">Grabadora de 8 canales, soporta cámaras de 1080p. Conexión por nube para visualización por celular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "7" type="button" class=" agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$6500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/dvr_960p_e_commerce.png" alt="Imagen grabadora de 960 pixeles" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Grabadora 960p</h5>
+                <p class="card-text">Grabadora de 16 canales, soporta cámaras de 960p. Conexión por nube para visualización por celular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "18" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$5500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/kit_wifi_e_commerce.png" alt="Imagen de kit wi-fi de cuatro cámaras" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Kit Wi-fi 1080p</h5>
+                <p class="card-text">Kit con cuatro cámaras Wi-fi, cuentan con infrarrojo. Conexión por nube para visualización por celular.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "8" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$17000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/fuente_plastica_e_commerce.png" alt="Imagen de fuente de alimentación plástica" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Fuente 12v plástica</h5>
+                <p class="card-text">Fuente de 12v gabinete plástico, ideal para alimentar cámaras. Cuentan con protección contra cortocircuito. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "9" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$700</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/fuente_metalica_e_commerce.png" alt="Imagen de fuente de alimentación metálica" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Fuente 12v metálica</h5>
+                <p class="card-text">Fuente de 12v metálica, ideal para alimentar cámaras. Cuentan con protección contra cortocircuito.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "10" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/cable_utp_e_commerce.png" alt="Imagen de rollo de cable UTP de 300 metros" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Rollo de cable UTP 300m</h5>
+                <p class="card-text">Rollo de cable UTP categoría 5. Cable de alta calidad con aislación plástica, apta para uso interior y exterior.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "11" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$8000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_plastica_e_commerce.png" alt="Imagen cámara domo plástica" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara plástica</h5>
+                <p class="card-text">Cámara 1080p plástica con infrarrojos de 20 metros, apta para uso nocturno. Cámara metálica para exterior.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "12" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$1500</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/disco_hdd_e_commerce.png" alt="Imagen de disco duro HDD de 500 Terabytes" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Disco Duro 500TB</h5>
+                <p class="card-text">Disco duro con almacenamiento de 500TB. Este disco está preparado para uso intensivo de grabación 24x7.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "13" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$3000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/balunes_e_commerce.png" alt="Imagen de balunes de video" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Balunes Full-hd</h5>
+                <p class="card-text">Balunes de video con bornera. Balunes con alto porcentaje de cobre para lograr una buena transmisión de video. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "14" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$300</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/joystick_ptz_e_commerce.png" alt="Imagen de joystick para domo PTZ" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Joystick Domo PTZ</h5>
+                <p class="card-text">Joystick para control de domo PTZ. Es posible generar tours y recorridos para almacenar en el domo PTZ. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "15" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$12000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/camara_ojo_de_pez_e_commerce.png" alt="Imagen de cámara ojo de pez" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cámara Ojo de Pez 360º</h5>
+                <p class="card-text">Cámara tipo ojo de pez con visualización de 360 grados. Contiene micrófono para captar sonido ambiente.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "16" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$20000</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="images/cable_armado_e_commerce.png" alt="Imagen de cable armade de video y alimentación" class="img-fluid imagen-ecommerce">
+              <div class="card-body">
+                <h5>Cable Video-alimentación</h5>
+                <p class="card-text">Cable armado de video-alimentación para conexión hacia la cámara. Cable de alta calidad interior y exterior.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button data-id = "17" type="button" class="agregar-al-carrito boton btn btn-sm btn-outline-secondary">Agregar</button>
+                  </div>
+                  <h4 class="mr-4">$600</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>  
+  <footer>
+	  <div class="container">
+      <div class="row">
+    		<div class="col-md-8 text-white-50 pt-3 pb-3">
+      		<h4 class="h4-footer">Nuestra Ubicación</h4>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.5782500475448!2d-64.20764668458479!3d-31.398190681410203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432988d73eb6f75%3A0xff6ccdf761348349!2sPedro%20Arata%201945%2C%20X5003AOA%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1599070342342!5m2!1ses-419!2sar" class="imagen-mapa" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    		</div>
+        <div class="col-md-4 text-white-50 pt-3">
+          <h4 class="mb-3 h4-footer">Contacto</h4>
+            <ul class="nav flex-column estilo-lista-footer ">
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="tel:+543516458244" target="_blank" ><i class="fas fa-phone-alt estilo-icono"></i>Teléfono:3516458244</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="mailto:empresa@gmail.com" target="_blank" ><i class="fas fa-envelope-open-text estilo-icono"></i>Mail: empresa@gmail.com</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="https://api.whatsapp.com/send?phone=543516458244&text=Hola!Tengo una consulta" target="_blank" ><i class="fab fa-whatsapp estilo-icono"></i>Ventas: 3516458245</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1" >
+                  <a class="nav-link letra-footer" href="https://api.whatsapp.com/send?phone=543516458244&text=Hola!Tengo una consulta" target="_blank"><i class="fab fa-whatsapp estilo-icono"></i>Soporte técnico: 3516458246</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://www.instagram.com/?hl=es-la" target="_blank" ><i class="fab fa-instagram-square estilo-icono"></i>Instagram</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://es-la.facebook.com/" class="mt-5" target="_blank"><i class="fab fa-facebook-square estilo-icono"></i>Facebook</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="estilo-footer1">
+                  <a class="nav-link letra-footer" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter-square estilo-icono"></i>Twitter</a>
+                </div>
+              </li>
+            </ul>       
+        </div>
+  	  </div>
+		</div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/notify.min.js"></script>
+  <script src="js/seccion_e_commerce.js"></script>
+  <script src="js/main.js"></script>
+</html>
